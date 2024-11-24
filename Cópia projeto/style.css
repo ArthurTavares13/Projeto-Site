@@ -1,4 +1,212 @@
 
+/*resete na página*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+/* especificando tamanho do minimo do body*/
+body{
+    max-width: 100%;
+    min-height: 100vh;
+}
+/* cabeçalho completo */
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    height: 70px;
+    background-color: rgb(18, 4, 80);
+    color: white;
+    align-items: center;
+    padding: 10px;
+}
+/* estrutura de imagem e a logo*/
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row; 
+    padding: 0;
+    margin-left: 20px;
+    gap: 10px;
+}
+.logo-text{
+    display: flex;
+    text-align: start;
+    margin-top: 15px;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.logo-p{
+    display: flex;;
+    flex-direction: column;
+}
+#Luxo{
+    color: rgb(61, 61, 228);
+}
+/* estrutura da navegação*/
+.nav-list{
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    align-items: end;
+    width: 70%;
+    height: 100%;
+    margin-right: 5%;
+    font-size: 2rem;
+}
+.nav-list .list li:not(:last-child)::after{
+    content: "|";
+    margin: 0 10px;
+}
+.list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+.list a {
+    color: white;
+    text-decoration: none;
+}
+.list li :hover{
+    color: aqua;
+}
+
+/* estrutura da imagem principal*/
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1;
+    border: 0;
+}
+
+
+.img-principal-barco{
+     width: 100%;
+}
+
+/* estrutura do pop-up*/
+.pop-up{
+    position: absolute;
+    top: 70%;
+    right: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 17%;
+    height: 20vh;
+    font-size: 1.6rem;
+    background: rgba(0, 0, 0, 0.247);
+    flex-direction: column;
+    color: white;
+    padding: 0 20px 0 20px;
+}
+/* alterações ho h1 do pop-up*/
+.pop-up h1{
+    color: white;
+    text-align: justify;
+}
+/*estrutura da imagem do barco pequeno junto com o texto*/
+.pop-up-imagem{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    margin: 10px;
+}
+/*alterações do telefone no span*/
+.tel{
+    color:wheat;
+}
+
+/*container geral*/
+.container-destinos-frota{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 30px;
+}
+/*Destinos*/
+.container-destinos, .container-frota{
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.h1-destinos{
+    display: flex;
+    align-items: center;
+    background-color: #1E90FF;
+}
+.h1-destinos h1{
+    margin-left: 10px;
+}
+.text-destinos{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    gap: 15px;
+}
+.barco-destino img{
+    width: 100%;
+}
+
+/* frota*/
+.container-frota{
+    gap: 15px;
+}
+.h1-frota{
+    display: flex;
+    align-items: center;
+    background-color: #FFD700;
+}
+.h1-frota h1{
+    margin-left: 10px;
+}
+.text-frota{
+    display: flex;
+    line-height: 2rem;
+    gap: 15px;
+    flex-direction: column;
+}
+.Container-final{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.Container-final img{
+    width: 201.5px;
+    height: 100px;
+}
+
+/* footer*/
+footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    font-size: 1.5rem;
+    background-color: rgba(146, 146, 146, 0.178);
+    margin-top: 10px;
+}
+footer p { 
+    margin: 10px;
+}
+
+
 
 
 
